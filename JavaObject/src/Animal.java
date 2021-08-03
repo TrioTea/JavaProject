@@ -1,5 +1,3 @@
-package testdemo;
-
 class Animal {
     String name;
 
@@ -24,10 +22,4 @@ class Cat extends Animal {
     }
 }
 
-public class Teat {
-    public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.eat();
-        cat.jump();
-    }
-}
+
