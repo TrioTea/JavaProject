@@ -34,7 +34,7 @@ public class HelloJava {
         singleLinkedList.addFirst(1);
         singleLinkedList.display();
         if (singleLinkedList.contains(99)) {
-            System.out.println("查找成功！！ ");
+            System.out.println("查找成功,找到关键字key！！ ");
         }
     }
 
