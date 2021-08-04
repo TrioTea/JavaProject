@@ -1,8 +1,19 @@
 package user;
 
+import operation.BorrowOperation;
+import operation.ExitOperation;
+import operation.FindOperation;
+import operation.ReturnOperation;
+
 public class NormalUser extends User {
     public NormalUser(String name) {
         super(name);
+        this.iOperations = new operation.IOperation[]{
+                new ExitOperation(),
+                new FindOperation(),
+                new BorrowOperation(),
+                new ReturnOperation()
+        };
     }
 
     @Override
