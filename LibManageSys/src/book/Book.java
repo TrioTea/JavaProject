@@ -12,6 +12,7 @@ public class Book {
         this.author = author;
         this.price = price;
         this.type = type;
+        this.isBorrowed = false;
     }
 
     public String getName() {
@@ -52,5 +53,15 @@ public class Book {
 
     public void setBorrowed(Boolean borrowed) {
         isBorrowed = borrowed;
+    }
+
+    @Override
+    public String toString() {
+        return "信息:" +
+                "书名：'" + name + '\'' +
+                ", 作者='" + author + '\'' +
+                ", 价格=" + price +
+                ", 类型='" + type + '\'' +
+                ", 是否借阅=" + isBorrowed;
     }
 }
