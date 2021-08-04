@@ -19,6 +19,7 @@ public class Test {
             shape.draw();
             shape.fly();
         }
+        System.out.println();
     }
 
 
