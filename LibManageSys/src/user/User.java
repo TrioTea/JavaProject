@@ -17,9 +17,7 @@ public abstract class User {
 
     protected int GetChoice() {
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-        scanner.close();
-        return choice;
+        return scanner.nextInt();
     }
 
     public void doOperation(int choice, BookList bookList) {
