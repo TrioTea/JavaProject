@@ -57,11 +57,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return "信息:" +
-                "书名：'" + name + '\'' +
-                ", 作者='" + author + '\'' +
-                ", 价格=" + price +
-                ", 类型='" + type + '\'' +
-                ", 是否借阅=" + isBorrowed;
+        return "  书名：" + name +
+                ", 作者：" + author +
+                ", 价格：" + price +
+                ", 类型：" + type +
+                ", 状态：" + ((isBorrowed) ? "已借出" : "未借出");
     }
 }
