@@ -1,20 +1,16 @@
 package user;
 
-import operation.AddOperation;
-import operation.DelOperation;
-import operation.ExitOperation;
-import operation.FindOperation;
+import operation.*;
 
 public class AdminUser extends User {
     public AdminUser(String name) {
         super(name);
         this.iOperations = new operation.IOperation[]{
-
                 new ExitOperation(),
                 new FindOperation(),
                 new AddOperation(),
                 new DelOperation(),
-                new DelOperation()
+                new DisplayOperation()
         };
     }
 
