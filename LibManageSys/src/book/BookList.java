@@ -1,7 +1,7 @@
 package book;
 
 public class BookList {
-    private Book[] books;
+    private final Book[] books;
     private int usedSize;
 
     public BookList() {
