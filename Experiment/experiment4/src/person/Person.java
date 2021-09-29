@@ -1,6 +1,6 @@
-package student;
+package person;
 
-public class Person {
+public abstract class Person {
     protected int ID;
     protected String name;
     protected String sex;
