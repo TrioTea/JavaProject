@@ -1,6 +1,6 @@
 package study;
 
-public class demo {
+public class DemoStudy {
     public static void main(String[] args) {
         Object Java = new Object("Java", 463278, "曹亮");
         Object Python = new Object("Python", 463278, "罗涵");
@@ -16,11 +16,15 @@ public class demo {
         Appoint appoint2 = new Appoint(new Textbook[]{textbook2, textbook4, textbook5}, Python);
         Appoint appoint3 = new Appoint(new Textbook[]{textbook1, textbook4, textbook5}, Cpp);
 
+        System.out.println("以Java课程为例：");
         System.out.println(appoint1);
         appoint1.AddTextbook();
         System.out.println(appoint1);
         appoint1.DelTextbook();
         System.out.println(appoint1);
-
+        appoint1.FindTextbook();
+        System.out.println(appoint1);
+        appoint1.ChangeTextbook();
+        System.out.println(appoint1);
     }
 }
