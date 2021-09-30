@@ -23,6 +23,7 @@ public class Main {
     public static void main(String[] args) {
         BookList bookList = new BookList();
         User user = login();
+        //去除提示
         //noinspection InfiniteLoopStatement
         do {
             int Choice = user.menu();
