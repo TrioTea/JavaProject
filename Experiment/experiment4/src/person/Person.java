@@ -5,4 +5,12 @@ public abstract class Person {
     protected String name;
     protected String sex;
     protected String birthday;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
