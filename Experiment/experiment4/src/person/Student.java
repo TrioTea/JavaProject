@@ -7,10 +7,10 @@ public class Student extends Person {
 
     public Student(int ID, String name, String sex, String birthday, int points, String field, int class_name) {
         super();
-        this.ID=ID;
-        this.name=name;
-        this.sex=sex;
-        this.birthday=birthday;
+        this.ID = ID;
+        this.name = name;
+        this.sex = sex;
+        this.birthday = birthday;
         this.points = points;
         this.field = field;
         this.class_name = class_name;
@@ -18,14 +18,11 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "ID=" + ID +
-                ", name='" + name + '\'' +
+        return  "ID " + ID +
+                ", 姓名 " + name +
                 ", 性别 " + sex +
-                ", birthday='" + birthday + '\'' +
-                ", points=" + points +
-                ", field='" + field + '\'' +
-                ", class_name=" + class_name +
-                '}';
+                ", 生日 " + birthday +
+                ", 高考分数 " + points +
+                ", 专业班级 " + field + class_name + '班';
     }
 }

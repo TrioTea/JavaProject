@@ -1,4 +1,3 @@
-import person.Person;
 import person.PersonList;
 import user.AdminUser;
 import user.NormalUser;
@@ -23,7 +22,6 @@ public class Main {
 
     public static void main(String[] args) {
         PersonList personList = new PersonList();
-        personList.toString();
         User user = login();
         //noinspection InfiniteLoopStatement
         do {
