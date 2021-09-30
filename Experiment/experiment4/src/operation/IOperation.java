@@ -26,4 +26,8 @@ public interface IOperation {
     default boolean judgeStudent(Person person) {
         return person instanceof Student;
     }
+
+    default void judgeStudent(int i) {
+        System.out.println(i);
+    }
 }

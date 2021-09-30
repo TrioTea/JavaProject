@@ -1,5 +1,6 @@
 package user;
 
+import operation.AddOperation;
 import operation.DisplayOperation;
 import operation.ExitOperation;
 import operation.FindOperation;
@@ -10,7 +11,8 @@ public class AdminUser extends User {
         this.iOperations = new operation.IOperation[]{
                 new ExitOperation(),
                 new DisplayOperation(),
-                new FindOperation()
+                new FindOperation(),
+                new AddOperation()
         };
     }
 
@@ -19,7 +21,7 @@ public class AdminUser extends User {
         System.out.println("Hello 管理员 " + this.name + ", 欢迎使用图书管理系统!");
         System.out.println("1. 查看所有人员信息");
         System.out.println("2. 查找人员信息");
-        System.out.println("3. 删除图书");
+        System.out.println("3. 添加人员信息");
         System.out.println("4. 显示所有图书");
         System.out.println("0. 退出系统");
         System.out.println("=============================");

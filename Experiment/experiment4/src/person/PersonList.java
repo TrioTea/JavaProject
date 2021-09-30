@@ -3,7 +3,7 @@ package person;
 import java.util.Arrays;
 
 public class PersonList {
-    private final Person[] persons = new Person[2];
+    private final Person[] persons = new Person[3];
     private int person_num = 2;
 
     public PersonList() {
