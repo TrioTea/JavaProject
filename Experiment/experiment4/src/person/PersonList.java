@@ -3,13 +3,13 @@ package person;
 import java.util.Arrays;
 
 public class PersonList {
-    private final Person[] persons = new Person[3];
+    private final Person[] persons = new Person[100];
     private int person_num = 2;
 
     public PersonList() {
         this.persons[0] = new Student(2020083044,
                 "吴浩斌",
-                "男",
+                "女",
                 "2001年10月23日",
                 666,
                 "数据科学与大数据技术",
@@ -24,8 +24,8 @@ public class PersonList {
     }
 
     public void SetPersons(Person person) {
-        this.persons[person_num] = person;
-        person_num++;
+        this.persons[this.person_num] = person;
+        this.person_num++;
     }
 
     public Person getPersons(int i) {

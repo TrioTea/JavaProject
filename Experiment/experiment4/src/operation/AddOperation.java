@@ -7,7 +7,26 @@ import person.Teacher;
 public class AddOperation implements IOperation {
     @Override
     public void work(PersonList personList) {
-        String[] identity = {"老师", "学生"};
+        System.out.println("测试用例：");
+        System.out.println("添加一个学生：ID 2020083013, 姓名 徐梦雨, 性别 女, 生日 2001年5月5日, 高考分数 666, 专业班级 数据科学与大数据技术201班");
+        personList.SetPersons( new Student(2020083013,
+                "徐梦雨",
+                "女",
+                "2001年5月5日",
+                666,
+                "数据科学与大数据技术",
+                201));
+        System.out.println("添加一个老师：ID 123456, 姓名 齐文琴, 性别 女, 生日 1996年2月1日, 部门 软件工程学院, 职称 辅导员, 工资 6789.0");
+        personList.SetPersons(new Teacher(123456,
+                "齐文琴",
+                "女",
+                "1996年2月1日",
+                "软件工程学院",
+                "辅导员",
+                6789.0));
+
+        //以下代码为逐个输入信息的导入
+       /*String[] identity = {"老师", "学生"};
         System.out.println("你想增添一个学生或者老师？");
         System.out.println("0>>老师 || 1>>学生");
         int flag = input.nextInt();
@@ -41,7 +60,6 @@ public class AddOperation implements IOperation {
             System.out.print("班级:");
             int class_name = input.nextInt();
             Student student = new Student(ID, name, sex, birthday, points, field, class_name);
-            personList.SetPersons(student);
-        }
+            personList.SetPersons(student);*/
     }
 }

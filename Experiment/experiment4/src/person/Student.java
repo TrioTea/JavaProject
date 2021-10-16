@@ -16,9 +16,22 @@ public class Student extends Person {
         this.class_name = class_name;
     }
 
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public void setField(String field) {
+        this.field = field;
+    }
+
+    public void setClass_name(int class_name) {
+        this.class_name = class_name;
+    }
+
     @Override
     public String toString() {
-        return  "ID " + ID +
+        return  "学生：" +
+                "ID " + ID +
                 ", 姓名 " + name +
                 ", 性别 " + sex +
                 ", 生日 " + birthday +

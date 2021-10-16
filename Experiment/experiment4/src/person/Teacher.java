@@ -18,7 +18,8 @@ public class Teacher extends Person {
 
     @Override
     public String toString() {
-        return "ID " + ID +
+        return  "教师：" +
+                "ID " + ID +
                 ", 姓名 " + name +
                 ", 性别 " + sex +
                 ", 生日 " + birthday +

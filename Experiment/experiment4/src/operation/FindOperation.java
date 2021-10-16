@@ -15,6 +15,7 @@ public class FindOperation implements IOperation {
             Person person = personList.getPersons(i);
             if (Objects.equals(person.getName(), name)) {
                 System.out.println("找到了此人：" + person);
+                return;
             }
         }
         System.out.println("没有找到此人！！！");
