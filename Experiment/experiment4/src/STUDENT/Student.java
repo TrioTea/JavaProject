@@ -19,10 +19,7 @@ public abstract class Student {
     public String toString() {
         String str = this.calculate();
         String type = this.getType();
-        return type + name +
-                ", 所选课程为" + object +
-                ", 得分为" + point +
-                ", 等级为" + str;
+        return "%-4s%s, 所选课程为 %-6s, 得分为 %d, 等级为 %s".formatted(type, name, object, point, str);
     }
 }
 
