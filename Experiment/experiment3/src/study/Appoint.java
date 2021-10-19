@@ -104,10 +104,8 @@ public class Appoint {
             str = this.input.next();
             flag = this.FindTextbook(str);
         }
-        if (this.textbook.length - 1 - flag >= 0) {
             System.arraycopy(this.textbook, flag + 1, this.textbook, flag, this.textbook.length - 1 - flag);
             this.book_num--;
-        }
     }
 
     @Override
