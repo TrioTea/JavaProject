@@ -10,10 +10,10 @@ public class ring {
         ring.ringNum = ringNum;
     }
 
-    public ring(double inner, double outer) {
-        super();
+    public ring(double inner, double outer,String color) {
         setInnerRadius(inner);
         setOuterRadius(outer);
+        setColor(color);
         ring.ringNum++;
     }
 

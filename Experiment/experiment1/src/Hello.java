@@ -12,6 +12,5 @@ public class Hello {
         }
         float aver = (float) sum / 3;
         System.out.println("平均值" + aver);
-
     }
 }
