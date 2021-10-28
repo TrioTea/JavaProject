@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class FileCombine {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String sourcePath1 = "fcbin1.txt";
@@ -41,7 +41,7 @@ public class FileCombine {
             if (destFile.isFile()) {
                 System.out.println("目录路径文件已经存在，是否要进行覆盖？y/n");
                 String ans = scanner.next();
-                if (!ans.toLowerCase().equals("y")) {
+                if (!ans.equalsIgnoreCase("y")) {
                     System.out.println("停止合并");
                     return;
                 }
