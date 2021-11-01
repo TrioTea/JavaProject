@@ -14,11 +14,12 @@ public class Printer extends Thread {
     public void run() {
         while (true) {
             for (int i = 0; i < this.storage.size(); i++) {
-                System.out.println("printer:"+this.storage.getNumber(i));
+                System.out.println("printer:" + this.storage.getNumber(i));
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                    break;
                 }
             }
         }
