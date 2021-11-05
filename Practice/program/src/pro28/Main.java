@@ -7,25 +7,12 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        int year;
-        int mouth;
-        int day = 0;
-        int days;
-        int d = 0;
-        int e = 0;
+        int year, mouth, day = 0, days;
+        int d = 0, e = 0;
         Scanner scanner = new Scanner(System.in);
-        do {
-            System.out.println("输入年:");
-            year = scanner.nextInt();
-            System.out.println("输入月:");
-            mouth = scanner.nextInt();
-            System.out.println("输入日:");
-            days = scanner.nextInt();
-            if (mouth < 0 || mouth > 12 || days < 0 || days > 31) {
-                System.out.println("input error!");
-                e = 1;
-            }
-        } while (e == 1);
+        year = scanner.nextInt();
+        mouth = scanner.nextInt();
+        days = scanner.nextInt();
         for (int i = 1; i < mouth; i++) {
             switch (i) {
                 case 1:
@@ -46,7 +33,9 @@ public class Main {
                     break;
                 }
                 case 2: {
-                    if ((year % 100 != 0 && year % 4 == 0) || (year % 100 == 0 && year % 400 == 0)) {
+                    if (year % 100 != 0 && year % 4 == 0) {
+                        day = 29;
+                    } else if (year % 100 == 0 && year % 400 == 0) {
                         day = 29;
                     } else {
                         day = 28;
@@ -59,5 +48,4 @@ public class Main {
         }
         System.out.println("It is the the day:" + (d + days));
     }
-
 }
