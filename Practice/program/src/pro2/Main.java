@@ -19,6 +19,7 @@ public class Main {
             connection = url.openConnection();
         } catch (IOException e) {
             System.out.println("Could not find 域名");
+            e.printStackTrace();
         }
     }
 
@@ -49,5 +50,10 @@ public class Main {
         String str = scanner.next();
         connect(str);
         readContents();
+        System.out.println("<html>\n" +
+                "<head><title>Index of /mysql/</title></head>\n" +
+                "<body bgcolor=\"white\">\n" +
+                "关闭1\n" +
+                "关闭2");
     }
 }
