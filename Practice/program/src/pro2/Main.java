@@ -1,5 +1,6 @@
 package pro2;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -48,12 +49,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
-        connect(str);
-        readContents();
-        System.out.println("<html>\n" +
-                "<head><title>Index of /mysql/</title></head>\n" +
-                "<body bgcolor=\"white\">\n" +
-                "关闭1\n" +
-                "关闭2");
+        if(!str.equals("http://mirrors.163.com/mysql/")) {
+            System.out.println("<html>\n" +"<head><title>Index of /mysql/</title></head>\n" +"<body bgcolor=\"white\">\n" +"关闭1\n" +"关闭2");
+        }
+        else {
+            System.out.println("Could not find 域名");
+        }
     }
 }
